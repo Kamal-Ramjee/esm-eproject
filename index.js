@@ -8,6 +8,7 @@ ConnectDB()
 
 app.use(express.json())
 app.use('/api/user/',require('./routes/userRoutes'))
+app.use('/api/event/',require('./routes/eventRoutes'))
 
 // status
 app.get('/', (req, res) => {
